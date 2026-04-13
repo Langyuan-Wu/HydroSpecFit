@@ -6,6 +6,18 @@ The three Excel files in this folder belong to the **same experiment** and shoul
 
 ---
 
+## Experimental context
+
+This example dataset was obtained from **Zn deposition on an Au-coated quartz crystal**.
+
+The electrolyte parameters for this example are based on measurements in:
+
+**2 M ZnSO4 + 0.5 mass% PEG400**
+
+These settings are provided as the recommended starting parameters for reproducing the example workflow in HydroSpecFit.
+
+---
+
 ## Included files
 
 ### 1. `quartz_in_air_example.xlsx`
@@ -47,6 +59,7 @@ This file provides the stabilized quartz reference signal in air.
 
 ```text
 f3_1 (Hz), D3_1 (ppm), f5_1 (Hz), D5_1 (ppm), ...
+````
 
 #### Example columns
 
@@ -167,6 +180,31 @@ Then continue with parameter checking, time synchronization if needed, and Auto-
 
 ---
 
+## Recommended parameters for this example
+
+The following parameter values are recommended for reproducing this example dataset in HydroSpecFit.
+
+| Parameter             | Recommended value | Description                                                      |
+| --------------------- | ----------------: | ---------------------------------------------------------------- |
+| Quartz Density        |       2.648 g/cm³ | Density of quartz                                                |
+| Quartz Viscosity      |       2.947e10 Pa | Quartz mechanical parameter used in the model                    |
+| Sensitivity           |    56.5 Hz·cm²/ug | Sauerbrey sensitivity factor                                     |
+| Molecular Weight      |          65 g/mol | Molecular weight of Zn                                           |
+| Number of Electrons   |                 2 | Electron transfer number for Zn²⁺/Zn                             |
+| Active Area           |         0.785 cm² | Electrode active area                                            |
+| Liquid Density        |      1.3228 g/cm³ | Electrolyte density for 2 M ZnSO4 + 0.5 mass% PEG400             |
+| Ref. Liquid Viscosity |       0.0033 Pa·s | Reference electrolyte viscosity for 2 M ZnSO4 + 0.5 mass% PEG400 |
+| Coverage (θ)          |               1.0 | Surface coverage factor                                          |
+
+### Notes on the recommended parameters
+
+* These values are intended as **starting parameters** for this example dataset
+* The electrochemical parameters correspond to **Zn deposition**
+* The electrolyte density and viscosity values correspond to **2 M ZnSO4 + 0.5 mass% PEG400**
+* The substrate in this example is an **Au-coated quartz crystal**
+
+---
+
 ## Important remarks
 
 * These files are provided as **one complete example dataset group**
@@ -174,3 +212,6 @@ Then continue with parameter checking, time synchronization if needed, and Auto-
 * Users are encouraged to follow the same column naming style and overall file structure when preparing their own datasets
 * If different naming conventions are used, HydroSpecFit may fail to detect the required columns correctly
 * For best compatibility, keep the formatting close to these example files
+
+---
+
