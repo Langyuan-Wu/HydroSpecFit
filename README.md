@@ -191,21 +191,13 @@ Typical exported result columns include:
 
 ---
 
-Suggested contents:
-
-* `assets/`: screenshots of the GUI and analysis windows
-* `sample_data/`: one complete example dataset group for learning and testing
-* `example_outputs/`: representative exported figure and data results
-
----
-
 ## Notes
 
 * Input files must be provided in Excel format.
 * Column names should follow the accepted naming patterns listed above.
 * Electrochemical data are required for theoretical curve calculation and cycle detection.
 * Reference frequency and dissipation values must be provided for all active harmonics.
-* For complex non-Newtonian systems, manual segmentation may be required.
+* For complex Newtonian systems, manual segmentation may be required.
 
 ---
 
